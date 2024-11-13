@@ -42,7 +42,16 @@ class AuthGate extends StatelessWidget {
                   style: TextStyle(color: Colors.grey),
                 ),
               );
-            },            
+            },  
+            sideBuilder: (context, shrinkOffset) {
+              return Padding(
+                padding: const EdgeInsets.all(20),
+                child: AspectRatio(
+                  aspectRatio: 1,
+                  child: Image.asset('assets/flutterfire.png'),
+                ),
+              );
+            },          
           );
         }
         return const HomeScreen();
